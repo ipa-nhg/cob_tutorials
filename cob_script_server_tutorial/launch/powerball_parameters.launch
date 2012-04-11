@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- start manipulation -->
+	<include file="$(find cob_manipulator)/ros/launch/kdl_solver.launch"/>  
+	<!-- upload default parameters -->
+        <rosparam command="load" ns="/script_server/arm" file="$(find schunk_default_config)/config/powerball_joint_configurations.yaml"/>
+
+	
+</launch>
